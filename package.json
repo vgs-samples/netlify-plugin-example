@@ -1,0 +1,22 @@
+{
+  "name": "netlify-test-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmarynych/netlify-test-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmarynych/netlify-test-site/issues"
+  },
+  "homepage": "https://github.com/dmarynych/netlify-test-site#readme",
+  "devDependencies": {
+    "netlify-plugin-dm": "1.2.0"
+  }
+}
