@@ -1,5 +1,5 @@
 {
-  "name": "netlify-test-site",
+  "name": "netlify-plugin-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmarynych/netlify-test-site.git"
+    "url": "git+https://github.com/dmarynych/netlify-plugin-example.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dmarynych/netlify-test-site/issues"
+    "url": "https://github.com/dmarynych/netlify-plugin-example/issues"
   },
-  "homepage": "https://github.com/dmarynych/netlify-test-site#readme",
+  "homepage": "https://github.com/dmarynych/netlify-plugin-example#readme",
   "devDependencies": {
-    "netlify-plugin-dm": "1.2.0"
+    "netlify-plugin-vgs": "0.0.1"
   }
 }
