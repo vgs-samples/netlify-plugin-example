@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/dmarynych/netlify-plugin-example#readme",
   "devDependencies": {
-    "@vgs/netlify-plugin-vgs": "0.0.1"
+    "@vgs/netlify-plugin-vgs": "0.0.2"
   }
 }
