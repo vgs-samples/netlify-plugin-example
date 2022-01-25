@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
+  <title>VGS <-> Netlify Plugin demo</title>
 </head>
 <body>
-  <form action="" netlify>
-    <input type="text" name="field" />
-
-    <button>submit</button>
+  <form name="contact" method="POST" data-netlify="true" action="https://tntdx8oynfd.sandbox.verygoodproxy.com" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>   
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
   </form>
 </body>
 </html>

@@ -1,30 +1,25 @@
 data:
   - attributes:
       created_at: '2022-01-24T19:52:20'
-      destination_override_endpoint: 'https://echo.apps.verygood.systems'
+      destination_override_endpoint: 'https://vgs-plugin.netlify.app'
       entries:
         - classifiers: {}
           config:
             condition: AND
-            expression: null
             rules:
-              - condition: null
-                expression:
+              - expression:
                   field: PathInfo
-                  operator: matches
+                  operator: equals
                   type: string
                   values:
-                    - /post
-                rules: null
-              - condition: null
-                expression:
+                    - /
+              - expression:
                   field: ContentType
                   operator: equals
                   type: string
                   values:
-                    - application/json
-                rules: null
-          id: f83bd13a-a346-4506-b091-0874740b8276
+                    - application/x-www-form-urlencoded
+          id: f85c9bb8-2a75-40b9-9824-c845e0678dc6
           id_selector: null
           operation: REDACT
           operations: null
@@ -33,9 +28,9 @@ data:
           targets:
             - body
           token_manager: PERSISTENT
-          transformer: JSON_PATH
+          transformer: FORM_FIELD
           transformer_config:
-            - $.account_number
+            - name
           transformer_config_map: null
       host_endpoint: (.*)\.verygoodproxy\.com
       id: d73cc233-c00c-4428-a7bc-f30022f41978
@@ -44,9 +39,9 @@ data:
       protocol: http
       source_endpoint: '*'
       tags:
-        name: hello from netlify-hello!
+        name: hello from netlify!
         source: RouteContainer
-      updated_at: '2022-01-24T19:52:20'
+      updated_at: '2022-01-25T13:52:02'
     id: d73cc233-c00c-4428-a7bc-f30022f41978
     type: rule_chain
 version: 1
