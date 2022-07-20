@@ -1,4 +1,9 @@
+[build]
+  publish = "dist/"
+  command = "npm run build"
+
+[dev]
+  command = "npm start"
+
 [[plugins]]
   package = "@vgs/netlify-plugin-vgs"
-# [[plugins]]
-#   package = "../netlify-plugin-vgs"
