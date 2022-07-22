@@ -35,6 +35,9 @@ document.getElementById('vgs-collect-form').addEventListener('submit', (e) => {
       /**
        * Retrieve tokens from the response and send them to your server.
        */
+      document.getElementById('result-wrapper').style = 'font-size: 14px'
+      document.getElementById('email-token').innerHTML = response.login_email
+      document.getElementById('password-token').innerHTML = response.login_password
       console.log(response);
     }
   }, (error) => {
