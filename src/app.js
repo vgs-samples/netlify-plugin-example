@@ -31,13 +31,14 @@ vgsForm.field('#password', {
 document.getElementById('vgs-collect-form').addEventListener('submit', (e) => {
   e.preventDefault();
   vgsForm.tokenize((status, response) => {
+    console.log(11111, status, response)
     if (status === 200) {
       /**
        * Retrieve tokens from the response and send them to your server.
        */
-      document.getElementById('result-wrapper').style = 'font-size: 14px'
-      document.getElementById('email-token').innerHTML = response.login_email
-      document.getElementById('password-token').innerHTML = response.login_password
+      document.querySelector('.result-wrapper').classList.add('block');
+      document.querySelector('.email-token').innerHTML = response.login_email;
+      document.querySelector('.password-token').innerHTML = response.login_password;
       console.log(response);
     }
   }, (error) => {
